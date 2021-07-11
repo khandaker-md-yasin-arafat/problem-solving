@@ -1,43 +1,39 @@
-// kilometerToMeter 
+//https://github.com/kmya/problem-solving
 
-// budgetCalculator
-
-// hotelCost
-
-// megaFriend
-
-
-// Assignment 1
+// Problem - 1
 function kilometerToMeter(kilometer){
+    // 1 Kilometer = 1000 Meter
     var meter = kilometer * 1000;
     return meter;
 }
-var distance = kilometerToMeter(5);
-console.log(distance);
 
-// Assignment 2
-function budgetCalculator(watch, mobile, laptop){
+// Problem - 2
+function budgetCalculator(watch, phone, laptop){
+    // Per watch price is 50 tk
     var watch = watch * 50;
-    var mobile = mobile * 100;
+    // Per phone price is 100 tk
+    var phone = phone * 100;
+    // Per laptop price is 500 tk
     var laptop = laptop * 500;
-    var total = watch + mobile + laptop;
+    var total = watch + phone + laptop;
     return total; 
 }
-var totalCost = budgetCalculator(7, 3, 2);
-console.log(totalCost);
 
-//Assignment 3 
+// Problem - 3 
 function hotelCost(day){
     var cost = 0;
+    // Day 1 to day 10 cost is 100 tk per day
     if(day <= 10){
         cost = day * 100;
     }
+    // Day 11 to day 20 cost is 80 tk per day
     else if(day <= 20){
         var firstTime = 10 * 100;
         var dueDay = day - 10;
         var secondTime = dueDay * 80;
         cost = firstTime + secondTime;
     }
+    // Day 21 to next any day cost is 50 tk per day
     else{
         var firstTime = 10 * 100;
         var secondTime = 10 * 80; 
@@ -47,10 +43,8 @@ function hotelCost(day){
     }
     return cost;
 }
-var totalHotelCost = hotelCost(26);
-console.log(totalHotelCost);
 
-//Assignment 4
+// Problem - 4
 function megaFriend(friends){
     var longName = friends[0];
     for(i = 0; i < friends.length; i++){
@@ -60,6 +54,3 @@ function megaFriend(friends){
     }
     return longName;
 }
-
-var friends = ["Kamal", "Tanvir", "Jahangir"];
-console.log(megaFriend(friends));
