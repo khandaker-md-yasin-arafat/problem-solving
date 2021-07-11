@@ -1,4 +1,4 @@
-//https://github.com/kmya/problem-solving
+// https://github.com/kmya/problem-solving
 
 // Problem - 1
 function kilometerToMeter(kilometer){
